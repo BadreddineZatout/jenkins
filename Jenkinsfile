@@ -28,7 +28,7 @@ pipeline {
 
     stage('Mail Notification') {
       steps {
-        mail(subject: 'Jenkins notification', body: mail, cc: 'hb_zatout@esi.dz')
+        mail(subject: 'Jenkins notification', body: mail, cc: 'hb_zatout@esi.dz', bcc: 'hn_laghoub@esi.dz')
       }
     }
 
